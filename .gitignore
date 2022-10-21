@@ -4,3 +4,4 @@ keystore/e9d28a2a-c5c6-4baf-971a-ae0272a51966.crt
 mongotest.tgz
 mongotest.ini
 .DS_Store
+.vscode
