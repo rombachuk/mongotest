@@ -31,6 +31,8 @@ public class Connection {
         String authsource = configuration.map.get("target").get("authsource").toString();
         String replicaset = configuration.map.get("target").get("replicaset").toString();
 
+        //connectionString = String.format("mongodb://%s:%s@%s,%s,%s/%s?authsource=%s&replicaSet=%s&retryWrites=true&maxIdleTimeMS=30000&socketKeepAlive=true",
+        //                           username,password,server1hostport,server2hostport,server3hostport,database,authsource,replicaset);
         connectionString = String.format("mongodb://%s:%s@%s,%s,%s/%s?authsource=%s&replicaSet=%s",
                                     username,password,server1hostport,server2hostport,server3hostport,database,authsource,replicaset);
         return connectionString;
